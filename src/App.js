@@ -34,7 +34,7 @@ function App() {
           </InputGroup>
         </FormGroup>
         <div className="btn-toolbar">
-        <Button color="primary" onClick={() => setResult(calculate(gross))} >Calculate</Button>
+        <Button color="primary" onClick={() => gross && setResult(calculate(gross))} >Calculate</Button>
         <Button className="ml-auto" color="danger" onClick={() => setGross('') || setResult()}>Reset</Button>
         </div>
       </Form>
